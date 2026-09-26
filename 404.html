@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/throttle_logo.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <title>404 — Page Not Found | THROTTLE - Motorcycle Riding Gear</title>
+
+    <script src="tailwind.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        accent: 'var(--color-accent)',
+                        'accent-light': 'var(--color-accent-light)',
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        /* --- Premium Dessert & Pastel Pink Palette --- */
+        :root, html[data-theme='light'] {
+            --color-background: #FFFDF9;
+            --color-primary-text: #3D271D;
+            --color-secondary-text: #7C6053;
+            --color-accent: #FF0000;
+            --color-accent-light: #A87C00;
+            --color-border: #F3ECE3;
+            --color-hover: #FFF5E6;
+            --color-footer-bg: #2A1A12;
+            --color-footer-text: #F5EBE6;
+        }
+        html[data-theme='dark'] {
+            --color-background: #0E0F12;
+            --color-primary-text: #F3F4F6;
+            --color-secondary-text: #9CA3AF;
+            --color-accent: #FF0000;
+            --color-accent-light: #D4AF37;
+            --color-border: #23272E;
+            --color-hover: #1A1C20;
+            --color-footer-bg: #07080A;
+            --color-footer-text: #E5E7EB;
+        }
+
+        body {
+            background-color: var(--color-background);
+            color: var(--color-primary-text);
+            font-family: 'Outfit', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            overflow-x: hidden;
+        }
+
+        .text-primary-text { color: var(--color-primary-text); }
+        .text-secondary-text { color: var(--color-secondary-text); }
+        .text-accent { color: var(--color-accent); }
+        .text-accent-light { color: var(--color-accent-light); }
+        .bg-background { background-color: var(--color-background); }
+        .bg-hover { background-color: var(--color-hover); }
+        .border-border { border-color: var(--color-border); }
+
+        /* ── Typography ── */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 550 !important;
+        }
+        h1 { font-size: 2.25rem !important; }
+        @media (min-width: 640px) { h1 { font-size: 3.75rem !important; } }
+
+        /* Gradient */
+        .bg-custom-gradient {
+            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+        }
+
+        /* Nav Link Pill Hover */
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+        .nav-link:hover, .nav-link.active {
+            background-color: var(--color-accent);
+            color: white !important;
+            box-shadow: 0 4px 12px rgba(255, 94, 134, 0.2);
+        }
+
+        /* DROPDOWN */
+        .dropdown-wrapper { position: relative; }
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+            background-color: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            min-width: 220px;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .dropdown-wrapper:hover .dropdown-menu {
+            opacity: 1; visibility: visible; transform: translateY(0);
+            display: block;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 0.75rem 1.25rem;
+            color: var(--color-primary-text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .dropdown-menu a:last-child { border-bottom: none; }
+        .dropdown-menu a:hover {
+            background-color: var(--color-hover);
+            color: var(--color-accent);
+            padding-left: 1.5rem;
+        }
+        @media (max-width: 1024px) {
+            .dropdown-menu { position: static; display: none; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; }
+            .dropdown-wrapper:hover .dropdown-menu { display: block; }
+        }
+
+        /* ── Button System ── */
+        .btn-primary, .book-btn {
+            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+            color: white;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .btn-primary:hover, .book-btn:hover {
+            opacity: 0.92;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 94, 134, 0.35);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .btn-outline:hover {
+            background: var(--color-accent);
+            color: white;
+            box-shadow: 0 4px 12px rgba(255, 94, 134, 0.25);
+        }
+
+        /* ── 404 Glitch Effect ── */
+        .glitch-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            position: relative;
+            display: inline-block;
+        }
+        .glitch-number::before,
+        .glitch-number::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            opacity: 0;
+        }
+        .glitch-number::before {
+            animation: glitch-1 3s infinite linear alternate-reverse;
+        }
+        .glitch-number::after {
+            animation: glitch-2 2.5s infinite linear alternate-reverse;
+        }
+        @keyframes glitch-1 {
+            0%, 90%, 100% { opacity: 0; transform: translate(0); }
+            92% { opacity: 0.8; transform: translate(-2px, 1px); }
+            94% { opacity: 0; transform: translate(0); }
+        }
+        @keyframes glitch-2 {
+            0%, 88%, 100% { opacity: 0; transform: translate(0); }
+            90% { opacity: 0.6; transform: translate(2px, -1px); }
+            96% { opacity: 0; transform: translate(0); }
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         HEADER — Same as index.html
+    ═══════════════════════════════════════════════════════════════ -->
+    <header class="sticky top-4 z-50 mx-4 sm:mx-6 lg:mx-8 mb-4 transition-all duration-300" id="main-header">
+        <nav class="max-w-screen-2xl mx-auto bg-background/80 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.3)] border border-border/50 rounded-full px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between h-[80px]">
+            <a href="index.html" class="flex items-center gap-2.5 flex-1 justify-start">
+                <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-white border border-accent/20 shadow-sm relative overflow-hidden group hover:bg-accent/10 transition-all duration-300">
+                    <img src="assets/throttle_logo.jpg" alt="THROTTLE Logo" class="w-full h-full object-cover">
+                </div>
+                <span class="text-2xl font-serif font-black tracking-tight" style="color: var(--color-accent);">THROTTLE</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden xl:flex items-center flex-1 justify-center">
+                <div class="flex items-center space-x-1 lg:space-x-2 rtl:space-x-reverse text-primary-text font-medium text-sm lg:text-base bg-hover/40 p-1 rounded-full border border-border/50 shadow-inner">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="sizing-guide.html" class="nav-link">Sizing Guide</a>
+                    <a href="brands.html" class="nav-link">Brands</a>
+                    <a href="accessories.html" class="nav-link">Accessories</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="hidden xl:flex items-center space-x-3 2xl:space-x-4 flex-1 justify-end">
+                <button id="theme-toggle" class="icon-btn text-primary-text hover:text-accent p-2 rounded-full transition duration-200 bg-hover/50 border border-border/50">
+                    <svg class="w-5 h-5 light-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <svg class="w-5 h-5 dark-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+                <button id="lang-icon" class="text-primary-text hover:text-accent p-2 rounded-full transition duration-200 bg-hover/50 border border-border/50">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                </button>
+                <div class="flex items-center gap-3 ms-2">
+                    <a href="contact.html" class="book-btn px-6 py-2.5 rounded-full font-bold shadow-lg shadow-accent/30 text-sm">Let's Contact</a>
+                </div>
+            </div>
+
+            <!-- Mobile menu trigger -->
+            <div class="xl:hidden flex items-center space-x-3 flex-1 justify-end">
+                <button id="mobile-theme-toggle-quick" class="icon-btn text-primary-text hover:text-accent p-1.5 rounded-full">
+                    <svg class="w-6 h-6 light-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <svg class="w-6 h-6 dark-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+                <button id="mobile-menu-open" class="icon-btn text-primary-text hover:text-accent p-1.5 rounded-full"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg></button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         MAIN — 404 CONTENT
+    ═══════════════════════════════════════════════════════════════ -->
+    <main class="flex-1 flex items-center justify-center py-16 sm:py-20 relative overflow-hidden">
+
+        <!-- Decorative background blobs -->
+        <div class="absolute top-1/4 -start-20 w-72 h-72 rounded-full bg-accent/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 -end-20 w-96 h-96 rounded-full bg-accent-light/10 blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-2xl relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+
+                <!-- Big 404 Glitch Number -->
+                <div class="animate-float mb-6">
+                    <h1 class="glitch-number text-[8rem] sm:text-[12rem] lg:text-[16rem]" data-text="404">404</h1>
+                </div>
+
+                <!-- Bike icon -->
+                <div class="w-20 h-20 mx-auto mb-8 rounded-3xl bg-accent/10 flex items-center justify-center text-accent text-3xl shadow-lg">
+                    <i class="fas fa-motorcycle"></i>
+                </div>
+
+                <!-- Heading -->
+                <h2 class="text-primary-text font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5">
+                    Looks Like You Took a Wrong Turn
+                </h2>
+
+                <!-- Subheading -->
+                <p class="text-secondary-text text-base sm:text-lg leading-relaxed font-light max-w-xl mx-auto mb-10">
+                    The page you're looking for has either been moved, renamed, or never existed. Don't worry — even the best riders take a detour sometimes.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap items-center justify-center gap-4 mb-14">
+                    <a href="index.html" class="btn-primary px-9 sm:px-11 py-3.5 rounded-full font-bold text-sm sm:text-base shadow-xl shadow-accent/40 transition-all duration-300">
+                        <i class="fas fa-house me-2 text-xs"></i> Back to Home
+                    </a>
+                    <a href="products.html" class="btn-outline px-9 sm:px-11 py-3.5 rounded-full font-bold text-sm sm:text-base transition-all duration-300">
+                        <i class="fas fa-store me-2 text-xs"></i> Browse Products
+                    </a>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="pt-10 border-t border-border/60">
+                    <p class="text-secondary-text text-xs tracking-[0.25em] uppercase font-semibold mb-6">Or Explore These Pages</p>
+                    <div class="flex flex-wrap items-center justify-center gap-3">
+                        <a href="products.html" class="px-5 py-2.5 rounded-full bg-hover border border-border/60 text-primary-text text-sm font-medium hover:border-accent/50 hover:text-accent transition-all duration-300">
+                            <i class="fas fa-helmet-safety me-2 text-xs text-accent"></i> Products
+                        </a>
+                        <a href="sizing-guide.html" class="px-5 py-2.5 rounded-full bg-hover border border-border/60 text-primary-text text-sm font-medium hover:border-accent/50 hover:text-accent transition-all duration-300">
+                            <i class="fas fa-ruler me-2 text-xs text-accent"></i> Sizing Guide
+                        </a>
+                        <a href="brands.html" class="px-5 py-2.5 rounded-full bg-hover border border-border/60 text-primary-text text-sm font-medium hover:border-accent/50 hover:text-accent transition-all duration-300">
+                            <i class="fas fa-award me-2 text-xs text-accent"></i> Brands
+                        </a>
+                        <a href="accessories.html" class="px-5 py-2.5 rounded-full bg-hover border border-border/60 text-primary-text text-sm font-medium hover:border-accent/50 hover:text-accent transition-all duration-300">
+                            <i class="fas fa-toolbox me-2 text-xs text-accent"></i> Accessories
+                        </a>
+                        <a href="about.html" class="px-5 py-2.5 rounded-full bg-hover border border-border/60 text-primary-text text-sm font-medium hover:border-accent/50 hover:text-accent transition-all duration-300">
+                            <i class="fas fa-circle-info me-2 text-xs text-accent"></i> About Us
+                        </a>
+                        <a href="contact.html" class="px-5 py-2.5 rounded-full bg-hover border border-border/60 text-primary-text text-sm font-medium hover:border-accent/50 hover:text-accent transition-all duration-300">
+                            <i class="fas fa-envelope me-2 text-xs text-accent"></i> Contact
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         MOBILE DRAWER — Same as index.html
+    ═══════════════════════════════════════════════════════════════ -->
+    <div id="mobile-menu-drawer" class="fixed inset-0 z-50 pointer-events-none transition-all duration-300">
+        <div id="drawer-backdrop" class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 pointer-events-none"></div>
+        <div id="drawer-content" class="absolute top-0 start-0 end-0 bg-background rounded-b-2xl shadow-2xl p-6 xl:hidden max-h-[85vh] overflow-y-auto transform translate-y-[-100%] transition-transform duration-300 ease-out">
+            <div class="flex justify-between items-center pb-4 border-b border-border">
+                <a href="index.html" class="flex items-center gap-2.5">
+                    <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-white border border-accent/20 shadow-sm relative overflow-hidden">
+                        <img src="assets/throttle_logo.jpg" alt="THROTTLE Logo" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-2xl font-serif font-black tracking-tight" style="color: var(--color-accent);">THROTTLE</span>
+                </a>
+                <button id="mobile-menu-close" class="text-primary-text hover:text-accent"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            </div>
+
+            <nav class="flex flex-col space-y-2 py-4">
+                <a href="index.html" class="block text-primary-text font-semibold text-lg py-2">Home</a>
+                <a href="products.html" class="block text-primary-text font-semibold text-lg py-2">Products</a>
+                <a href="sizing-guide.html" class="block text-primary-text font-semibold text-lg py-2">Sizing Guide</a>
+                <a href="brands.html" class="block text-primary-text font-semibold text-lg py-2">Brands</a>
+                <a href="accessories.html" class="block text-primary-text font-semibold text-lg py-2">Accessories</a>
+                <a href="about.html" class="block text-primary-text font-semibold text-lg py-2">About Us</a>
+                <a href="contact.html" class="block text-primary-text font-semibold text-lg py-2">Contact</a>
+            </nav>
+
+            <div class="pt-4 border-t border-border mt-4 flex justify-around items-center">
+                <button id="mobile-lang-icon-drawer" class="flex flex-col items-center">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                    <span class="text-xs mt-1 text-secondary-text">RTL</span>
+                </button>
+                <button id="drawer-theme-toggle" class="flex flex-col items-center">
+                    <svg class="w-6 h-6 light-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                    <svg class="w-6 h-6 dark-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                    <span class="text-xs mt-1 text-secondary-text">Theme</span>
+                </button>
+            </div>
+            <div class="flex mt-5 gap-5 w-full">
+                <a href="contact.html" class="flex-1 book-btn text-center py-2.5 rounded-xl font-bold text-sm shadow-md">Let's Contact</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const html = document.documentElement;
+
+            // Drawer Control
+            const menuDrawer = document.getElementById('mobile-menu-drawer');
+            const menuContent = document.getElementById('drawer-content');
+            const menuBackdrop = document.getElementById('drawer-backdrop');
+
+            const openDrawer = () => {
+                menuDrawer.classList.remove('pointer-events-none');
+                menuContent.classList.remove('translate-y-[-100%]');
+                menuBackdrop.classList.add('opacity-50', 'pointer-events-auto');
+                document.body.style.overflow = 'hidden';
+            };
+            const closeDrawer = () => {
+                menuContent.classList.add('translate-y-[-100%]');
+                menuBackdrop.classList.remove('opacity-50', 'pointer-events-auto');
+                setTimeout(() => { menuDrawer.classList.add('pointer-events-none'); document.body.style.overflow = ''; }, 300);
+            };
+
+            document.getElementById('mobile-menu-open').addEventListener('click', openDrawer);
+            document.getElementById('mobile-menu-close').addEventListener('click', closeDrawer);
+            menuBackdrop.addEventListener('click', closeDrawer);
+
+            // Theme Switcher
+            const themeToggles = [
+                document.getElementById('theme-toggle'),
+                document.getElementById('drawer-theme-toggle'),
+                document.getElementById('mobile-theme-toggle-quick')
+            ];
+
+            const applyTheme = (theme) => {
+                html.setAttribute('data-theme', theme);
+                html.classList.toggle('dark', theme === 'dark');
+                document.querySelectorAll('.light-icon').forEach(i => i.classList.toggle('hidden', theme === 'dark'));
+                document.querySelectorAll('.dark-icon').forEach(i => i.classList.toggle('hidden', theme === 'light'));
+            };
+
+            themeToggles.forEach(btn => {
+                btn?.addEventListener('click', () => {
+                    const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+                    localStorage.setItem('theme', next);
+                    applyTheme(next);
+                });
+            });
+            applyTheme(localStorage.getItem('theme') || 'light');
+
+            // Language RTL toggle
+            const langToggles = [document.getElementById('lang-icon'), document.getElementById('mobile-lang-icon-drawer')];
+            langToggles.forEach(btn => btn?.addEventListener('click', () => {
+                const current = localStorage.getItem('language') === 'ar' ? 'en' : 'ar';
+                localStorage.setItem('language', current);
+                html.setAttribute('dir', current === 'ar' ? 'rtl' : 'ltr');
+            }));
+            html.setAttribute('dir', localStorage.getItem('language') === 'ar' ? 'rtl' : 'ltr');
+        });
+    </script>
+</body>
+</html>
