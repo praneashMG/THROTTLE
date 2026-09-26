@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    background: 'var(--color-background)',
+                }
+            }
+        }
+    }
+</script>
+<style>
+    :root {
+        --color-background: #FF0000;
+    }
+</style>
+</head>
+<body>
+    <div class="bg-background/50 w-32 h-32">Test</div>
+</body>
+</html>
+
+
