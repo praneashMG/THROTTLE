@@ -319,70 +319,204 @@
     </section>
 
 
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 2 — CORE CATEGORIES (Helmets, Jackets, Gloves, Boots)
+    ═══════════════════════════════════════════════════════════════ -->
     <section class="w-full py-20 sm:py-28 bg-background transition-colors duration-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-2xl">
 
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-block text-accent text-xs font-bold tracking-[0.3em] uppercase mb-4">Shop by Category</span>
-                <h2 class="text-primary-text font-serif leading-tight mb-5">Gear for Every Ride</h2>
+                <span class="inline-block text-accent text-xs font-bold tracking-[0.3em] uppercase mb-4">Complete Rider Protection</span>
+                <h2 class="text-primary-text font-serif leading-tight mb-5">Gear for Every Mile</h2>
                 <p class="text-secondary-text text-base sm:text-lg font-light max-w-2xl mx-auto">
-                    From daily commutes to weekend getaways — find the perfect equipment tailored to your journey.
+                    From track days to city commutes — discover certified helmets, armored jackets, race gloves, and reinforced boots built to protect.
                 </p>
             </div>
 
-            <!-- Alternating split rows -->
-            <div class="space-y-16 lg:space-y-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
 
-                <!-- Row 1 -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl group">
-                        <img src="assets/a1.jpg"
-                             alt="Premium motorcycle helmet" class="w-full h-[280px] sm:h-[380px] lg:h-[440px] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-                        <div class="absolute top-5 start-5 bg-[#FFFDF9]/90 dark:bg-[#0E0F12]/90 backdrop-blur-md px-4 py-2 rounded-full border border-border/50">
-                            <span class="text-primary-text text-xs font-bold tracking-wider uppercase">01 · Helmets</span>
-                        </div>
+                <!-- 01 Helmets -->
+                <div class="group bg-background rounded-3xl border border-border/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-60 overflow-hidden bg-hover">
+                        <img src="assets/d1.jpg"
+                             alt="Motorcycle helmets collection"
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <span class="absolute top-4 start-4 bg-accent text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">ECE 22.06</span>
+                        <div class="absolute bottom-3 start-4 text-white text-xs font-bold tracking-wider uppercase">01 · Helmets</div>
                     </div>
-                    <div class="text-center lg:text-start">
-                        <h3 class="text-primary-text font-serif text-2xl sm:text-3xl lg:text-4xl leading-tight mb-5">
-                            Heads You Can Trust
-                        </h3>
-                        <p class="text-secondary-text text-base leading-relaxed mb-7 max-w-lg mx-auto lg:mx-0">
-                            DOT, ECE & SNELL certified helmets with advanced aerodynamics, noise isolation, and pinlock-ready visors. Your first line of defense, styled for the road.
-                        </p>
-                        <ul class="space-y-3 mb-8 max-w-md mx-auto lg:mx-0 text-start">
-                            <li class="flex items-center gap-3"><i class="fas fa-circle-check text-accent text-sm"></i><span class="text-secondary-text text-sm">Full-face, modular & open-face options</span></li>
-                            <li class="flex items-center gap-3"><i class="fas fa-circle-check text-accent text-sm"></i><span class="text-secondary-text text-sm">Anti-fog & UV-protected visors</span></li>
-                            <li class="flex items-center gap-3"><i class="fas fa-circle-check text-accent text-sm"></i><span class="text-secondary-text text-sm">Removable & washable liners</span></li>
-                        </ul>
-                        <a href="products.html" class="inline-flex items-center gap-2 text-accent font-bold text-sm tracking-wide hover:gap-3 transition-all duration-300">
-                            Explore Helmets <i class="fas fa-arrow-right text-xs"></i>
-                        </a>
+                    <div class="p-6 text-center flex flex-col flex-1">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-2xl bg-accent/10 flex items-center justify-center text-accent text-xl">
+                            <i class="fas fa-helmet-safety"></i>
+                        </div>
+                        <h3 class="text-primary-text font-serif text-xl mb-2">Helmets</h3>
+                        <p class="text-secondary-text text-sm leading-relaxed flex-1">Full-face, modular & open-face models from Shoei, Arai & AGV.</p>
+                        <a href="products.html" class="mt-5 text-accent font-bold text-xs tracking-widest uppercase hover:tracking-[0.2em] transition-all duration-300">Explore Helmets →</a>
                     </div>
                 </div>
 
-                <!-- Row 2 (reversed) -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
-                    <div class="text-center lg:text-start order-2 lg:order-1">
-                        <h3 class="text-primary-text font-serif text-2xl sm:text-3xl lg:text-4xl leading-tight mb-5">
-                            Armored for the Journey
-                        </h3>
-                        <p class="text-secondary-text text-base leading-relaxed mb-7 max-w-lg mx-auto lg:mx-0">
-                            Cordura, leather & textile jackets with CE Level 2 armor, thermal liners, and waterproof membranes — built to handle every climate with ease.
-                        </p>
-                        <ul class="space-y-3 mb-8 max-w-md mx-auto lg:mx-0 text-start">
-                            <li class="flex items-center gap-3"><i class="fas fa-circle-check text-accent text-sm"></i><span class="text-secondary-text text-sm">Abrasion & tear-resistant shells</span></li>
-                            <li class="flex items-center gap-3"><i class="fas fa-circle-check text-accent text-sm"></i><span class="text-secondary-text text-sm">Shoulder, elbow & back protectors</span></li>
-                            <li class="flex items-center gap-3"><i class="fas fa-circle-check text-accent text-sm"></i><span class="text-secondary-text text-sm">Ventilation & thermal regulation</span></li>
-                        </ul>
-                        <a href="products.html" class="inline-flex items-center gap-2 text-accent font-bold text-sm tracking-wide hover:gap-3 transition-all duration-300">
-                            Shop Jackets <i class="fas fa-arrow-right text-xs"></i>
-                        </a>
+                <!-- 02 Jackets -->
+                <div class="group bg-background rounded-3xl border border-border/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-60 overflow-hidden bg-hover">
+                        <img src="assets/d2.jpg"
+                             alt="Motorcycle jackets collection"
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <span class="absolute top-4 start-4 bg-accent text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">CE Level 2</span>
+                        <div class="absolute bottom-3 start-4 text-white text-xs font-bold tracking-wider uppercase">02 · Jackets</div>
                     </div>
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl group order-1 lg:order-2">
-                        <img src="assets/a2.jpg"
-                             alt="Motorcycle riding jacket" class="w-full h-[280px] sm:h-[380px] lg:h-[440px] object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-                        <div class="absolute top-5 start-5 bg-[#FFFDF9]/90 dark:bg-[#0E0F12]/90 backdrop-blur-md px-4 py-2 rounded-full border border-border/50">
-                            <span class="text-primary-text text-xs font-bold tracking-wider uppercase">02 · Jackets</span>
+                    <div class="p-6 text-center flex flex-col flex-1">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-2xl bg-accent/10 flex items-center justify-center text-accent text-xl">
+                            <i class="fas fa-vest"></i>
+                        </div>
+                        <h3 class="text-primary-text font-serif text-xl mb-2">Riding Jackets</h3>
+                        <p class="text-secondary-text text-sm leading-relaxed flex-1">Full-grain leather, Cordura & all-weather textiles with armor inserts.</p>
+                        <a href="products.html" class="mt-5 text-accent font-bold text-xs tracking-widest uppercase hover:tracking-[0.2em] transition-all duration-300">Shop Jackets →</a>
+                    </div>
+                </div>
+
+                <!-- 03 Gloves -->
+                <div class="group bg-background rounded-3xl border border-border/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-60 overflow-hidden bg-hover">
+                        <img src="assets/d3.jpg"
+                             alt="Motorcycle riding gloves"
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <span class="absolute top-4 start-4 bg-accent text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">Carbon Guards</span>
+                        <div class="absolute bottom-3 start-4 text-white text-xs font-bold tracking-wider uppercase">03 · Gloves</div>
+                    </div>
+                    <div class="p-6 text-center flex flex-col flex-1">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-2xl bg-accent/10 flex items-center justify-center text-accent text-xl">
+                            <i class="fas fa-mitten"></i>
+                        </div>
+                        <h3 class="text-primary-text font-serif text-xl mb-2">Gloves</h3>
+                        <p class="text-secondary-text text-sm leading-relaxed flex-1">Reinforced knuckles, palm sliders, and touchscreen-compatible fingertips.</p>
+                        <a href="products.html" class="mt-5 text-accent font-bold text-xs tracking-widest uppercase hover:tracking-[0.2em] transition-all duration-300">Shop Gloves →</a>
+                    </div>
+                </div>
+
+                <!-- 04 Boots -->
+                <div class="group bg-background rounded-3xl border border-border/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-60 overflow-hidden bg-hover">
+                        <img src="assets/d4.jpg"
+                             alt="Motorcycle riding boots and shoes"
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <span class="absolute top-4 start-4 bg-accent text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">Ankle Armored</span>
+                        <div class="absolute bottom-3 start-4 text-white text-xs font-bold tracking-wider uppercase">04 · Boots & Shoes</div>
+                    </div>
+                    <div class="p-6 text-center flex flex-col flex-1">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-2xl bg-accent/10 flex items-center justify-center text-accent text-xl">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <h3 class="text-primary-text font-serif text-xl mb-2">Boots & Shoes</h3>
+                        <p class="text-secondary-text text-sm leading-relaxed flex-1">Racing boots, waterproof adventure boots, and stealth riding shoes.</p>
+                        <a href="products.html" class="mt-5 text-accent font-bold text-xs tracking-widest uppercase hover:tracking-[0.2em] transition-all duration-300">Shop Boots →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 3 — FEATURED GEAR & BEST SELLERS (Product Cards with Pricing)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="w-full py-20 sm:py-28 bg-hover transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-2xl">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <span class="inline-block text-accent text-xs font-bold tracking-[0.3em] uppercase mb-4">Rider Approved</span>
+                    <h2 class="text-primary-text font-serif leading-tight">Featured Gear & Best Sellers</h2>
+                    <p class="text-secondary-text text-base sm:text-lg font-light mt-3">
+                        Real gear tried, tested, and trusted on open roads and racetracks worldwide.
+                    </p>
+                </div>
+                <div>
+                    <a href="products.html" class="btn-primary inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-bold text-sm shadow-lg shadow-accent/20">
+                        View Full Catalog <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Product 1: Helmet -->
+                <div class="group bg-background rounded-3xl border border-border/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-hover">
+                        <img src="assets/e1.jpg"
+                             alt="Apex Pro Carbon Helmet"
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                        <span class="absolute top-4 start-4 bg-accent text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">Best Seller</span>
+                        <span class="absolute top-4 end-4 bg-background/90 backdrop-blur-md text-primary-text text-[10px] font-bold px-2.5 py-1 rounded-full border border-border/60">ECE 22.06</span>
+                    </div>
+                    <div class="p-6 text-center flex flex-col flex-1">
+                        <p class="text-accent text-[11px] font-bold tracking-widest uppercase mb-2">Helmet</p>
+                        <h3 class="text-primary-text font-serif text-lg mb-2">Apex Pro Carbon</h3>
+                        <p class="text-secondary-text text-sm mb-4">Aerospace Carbon · 1,250g Ultra Light</p>
+                        <div class="flex items-center justify-between mt-auto pt-4 border-t border-border/50">
+                            <span class="text-primary-text font-bold text-xl">$389.00</span>
+                            <a href="products.html" class="inline-flex items-center gap-1.5 text-accent font-semibold text-xs hover:underline">Details <i class="fas fa-arrow-right text-[10px]"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Jacket -->
+                <div class="group bg-background rounded-3xl border border-border/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-hover">
+                        <img src="assets/e2.jpg"
+                             alt="Rider Pro Armored Jacket"
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                        <span class="absolute top-4 start-4 bg-accent text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">New Arrival</span>
+                        <span class="absolute top-4 end-4 bg-background/90 backdrop-blur-md text-primary-text text-[10px] font-bold px-2.5 py-1 rounded-full border border-border/60">CE Level 2</span>
+                    </div>
+                    <div class="p-6 text-center flex flex-col flex-1">
+                        <p class="text-accent text-[11px] font-bold tracking-widest uppercase mb-2">Jacket</p>
+                        <h3 class="text-primary-text font-serif text-lg mb-2">Rider Pro Armored</h3>
+                        <p class="text-secondary-text text-sm mb-4">Waterproof Shell · Thermal Liner</p>
+                        <div class="flex items-center justify-between mt-auto pt-4 border-t border-border/50">
+                            <span class="text-primary-text font-bold text-xl">$279.00</span>
+                            <a href="products.html" class="inline-flex items-center gap-1.5 text-accent font-semibold text-xs hover:underline">Details <i class="fas fa-arrow-right text-[10px]"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Gloves -->
+                <div class="group bg-background rounded-3xl border border-border/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-hover">
+                        <img src="assets/e3.jpg"
+                             alt="Grip Master Pro Riding Gloves"
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                        <span class="absolute top-4 start-4 bg-black/70 text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">Track Ready</span>
+                    </div>
+                    <div class="p-6 text-center flex flex-col flex-1">
+                        <p class="text-accent text-[11px] font-bold tracking-widest uppercase mb-2">Gloves</p>
+                        <h3 class="text-primary-text font-serif text-lg mb-2">Grip Master Pro</h3>
+                        <p class="text-secondary-text text-sm mb-4">Carbon Knuckle Guard · Touchscreen</p>
+                        <div class="flex items-center justify-between mt-auto pt-4 border-t border-border/50">
+                            <span class="text-primary-text font-bold text-xl">$89.00</span>
+                            <a href="products.html" class="inline-flex items-center gap-1.5 text-accent font-semibold text-xs hover:underline">Details <i class="fas fa-arrow-right text-[10px]"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Boots -->
+                <div class="group bg-background rounded-3xl border border-border/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
+                    <div class="relative h-64 overflow-hidden bg-hover">
+                        <img src="assets/e4.jpg"
+                             alt="Road King Armored Boots"
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                        <span class="absolute top-4 start-4 bg-accent text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">Top Rated</span>
+                    </div>
+                    <div class="p-6 text-center flex flex-col flex-1">
+                        <p class="text-accent text-[11px] font-bold tracking-widest uppercase mb-2">Boots</p>
+                        <h3 class="text-primary-text font-serif text-lg mb-2">Road King Boots</h3>
+                        <p class="text-secondary-text text-sm mb-4">Ankle Armor · Oil Resistant Grip</p>
+                        <div class="flex items-center justify-between mt-auto pt-4 border-t border-border/50">
+                            <span class="text-primary-text font-bold text-xl">$199.00</span>
+                            <a href="products.html" class="inline-flex items-center gap-1.5 text-accent font-semibold text-xs hover:underline">Details <i class="fas fa-arrow-right text-[10px]"></i></a>
                         </div>
                     </div>
                 </div>
@@ -392,14 +526,112 @@
     </section>
 
 
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 4 — WORLD-CLASS BRANDS WE STOCK (Visual Brand Showcase)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="w-full py-20 sm:py-28 bg-background transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-2xl">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block text-accent text-xs font-bold tracking-[0.3em] uppercase mb-4">Official Retailer</span>
+                <h2 class="text-primary-text font-serif leading-tight mb-5">Brands That Define the Ride</h2>
+                <p class="text-secondary-text text-base sm:text-lg font-light max-w-2xl mx-auto">
+                    We partner directly with the world's premier riding manufacturers — every item carries genuine factory warranty and certified safety credentials.
+                </p>
+            </div>
+
+            <!-- Brand Cards with Real Images -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- SHOEI -->
+                <a href="brands.html" class="group relative rounded-3xl overflow-hidden shadow-lg border border-border/60 min-h-[260px] flex flex-col justify-end p-6 hover:shadow-2xl transition-all duration-500">
+                    <img src="assets/S1.jpg" alt="SHOEI Helmets" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-transparent"></div>
+                    <div class="relative z-10 text-white">
+                        <span class="text-accent text-[10px] font-bold tracking-widest uppercase">Japan · Helmets</span>
+                        <h3 class="font-serif text-2xl font-bold mt-1">SHOEI</h3>
+                        <p class="text-white/80 text-xs mt-1">Japanese engineering, premium aero & noise reduction.</p>
+                    </div>
+                </a>
+
+                <!-- DAINESE -->
+                <a href="brands.html" class="group relative rounded-3xl overflow-hidden shadow-lg border border-border/60 min-h-[260px] flex flex-col justify-end p-6 hover:shadow-2xl transition-all duration-500">
+                    <img src="assets/S2.jpg" alt="DAINESE Riding Gear" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-transparent"></div>
+                    <div class="relative z-10 text-white">
+                        <span class="text-accent text-[10px] font-bold tracking-widest uppercase">Italy · Suits & Jackets</span>
+                        <h3 class="font-serif text-2xl font-bold mt-1">DAINESE</h3>
+                        <p class="text-white/80 text-xs mt-1">MotoGP heritage, CE armor & Italian leather.</p>
+                    </div>
+                </a>
+
+                <!-- ALPINESTARS -->
+                <a href="brands.html" class="group relative rounded-3xl overflow-hidden shadow-lg border border-border/60 min-h-[260px] flex flex-col justify-end p-6 hover:shadow-2xl transition-all duration-500">
+                    <img src="assets/S3.jpg" alt="ALPINESTARS Riding Gear" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-transparent"></div>
+                    <div class="relative z-10 text-white">
+                        <span class="text-accent text-[10px] font-bold tracking-widest uppercase">Italy · Gloves & Boots</span>
+                        <h3 class="font-serif text-2xl font-bold mt-1">ALPINESTARS</h3>
+                        <p class="text-white/80 text-xs mt-1">Race-proven protection trusted on world podiums.</p>
+                    </div>
+                </a>
+
+                <!-- REV'IT! -->
+                <a href="brands.html" class="group relative rounded-3xl overflow-hidden shadow-lg border border-border/60 min-h-[260px] flex flex-col justify-end p-6 hover:shadow-2xl transition-all duration-500">
+                    <img src="assets/S4.jpg" alt="REV'IT! Riding Gear" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-transparent"></div>
+                    <div class="relative z-10 text-white">
+                        <span class="text-accent text-[10px] font-bold tracking-widest uppercase">Netherlands · All-Weather</span>
+                        <h3 class="font-serif text-2xl font-bold mt-1">REV'IT!</h3>
+                        <p class="text-white/80 text-xs mt-1">Dutch innovation blending urban style & touring protection.</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- More Brand Badges Row -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-8">
+                <div class="flex items-center justify-center p-6 rounded-2xl bg-hover border border-border/50 text-center font-serif font-bold text-primary-text hover:border-accent hover:text-accent transition-all">
+                    ARAI
+                </div>
+                <div class="flex items-center justify-center p-6 rounded-2xl bg-hover border border-border/50 text-center font-serif font-bold text-primary-text hover:border-accent hover:text-accent transition-all">
+                    AGV
+                </div>
+                <div class="flex items-center justify-center p-6 rounded-2xl bg-hover border border-border/50 text-center font-serif font-bold text-primary-text hover:border-accent hover:text-accent transition-all">
+                    HJC
+                </div>
+                <div class="flex items-center justify-center p-6 rounded-2xl bg-hover border border-border/50 text-center font-serif font-bold text-primary-text hover:border-accent hover:text-accent transition-all">
+                    BELL
+                </div>
+                <div class="flex items-center justify-center p-6 rounded-2xl bg-hover border border-border/50 text-center font-serif font-bold text-primary-text hover:border-accent hover:text-accent transition-all">
+                    SIDI
+                </div>
+                <div class="flex items-center justify-center p-6 rounded-2xl bg-hover border border-border/50 text-center font-serif font-bold text-primary-text hover:border-accent hover:text-accent transition-all">
+                    SCHUBERTH
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="brands.html" class="inline-flex items-center gap-2 text-accent font-bold text-sm tracking-widest uppercase hover:gap-3 transition-all duration-300">
+                    Explore Brand Heritage <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 5 — ESSENTIAL RIDING ACCESSORIES (Bento Grid)
+    ═══════════════════════════════════════════════════════════════ -->
     <section class="w-full py-20 sm:py-28 bg-hover transition-colors duration-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-2xl">
 
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="inline-block text-accent text-xs font-bold tracking-[0.3em] uppercase mb-4">Complete Your Kit</span>
-                <h2 class="text-primary-text font-serif leading-tight mb-5">Essentials That Matter</h2>
+                <h2 class="text-primary-text font-serif leading-tight mb-5">Riding Accessories & Gear Care</h2>
                 <p class="text-secondary-text text-base sm:text-lg font-light max-w-2xl mx-auto">
-                    Handpicked riding essentials — because the smallest details make the biggest difference on the road.
+                    The essential gear that makes every journey smoother — from anti-vibration phone mounts to weather luggage and helmet maintenance.
                 </p>
             </div>
 
@@ -409,14 +641,14 @@
                 <!-- Big tile -->
                 <div class="sm:col-span-2 sm:row-span-2 relative rounded-3xl overflow-hidden group shadow-lg min-h-[320px] sm:min-h-[420px]">
                     <img src="assets/a3.jpg"
-                         alt="Motorcycle gloves and boots" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                         alt="Motorcycle gloves and boots signature set" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
                     <div class="absolute bottom-0 start-0 end-0 p-7 sm:p-8 text-center sm:text-start">
-                        <span class="text-white/90 text-xs font-bold tracking-widest uppercase mb-2 block">Signature Set</span>
-                        <h3 class="text-white font-serif text-2xl sm:text-3xl mb-2">Gloves & Boots</h3>
-                        <p class="text-white/80 text-sm mb-4 max-w-md mx-auto sm:mx-0">Reinforced knuckle gloves and ankle-protected boots for grip & feel.</p>
-                        <a href="products.html" class="inline-flex items-center gap-2 text-white font-bold text-sm hover:gap-3 transition-all duration-300">
-                            Discover <i class="fas fa-arrow-right text-xs"></i>
+                        <span class="text-white/90 text-xs font-bold tracking-widest uppercase mb-2 block">Rider Essentials</span>
+                        <h3 class="text-white font-serif text-2xl sm:text-3xl mb-2">Gloves, Boots & Tech Mounts</h3>
+                        <p class="text-white/80 text-sm mb-4 max-w-md mx-auto sm:mx-0">Reinforced knuckle gloves, armored boots, and vibration-dampened navigation mounts for maximum control.</p>
+                        <a href="accessories.html" class="inline-flex items-center gap-2 text-white font-bold text-sm hover:gap-3 transition-all duration-300">
+                            Explore Accessories <i class="fas fa-arrow-right text-xs"></i>
                         </a>
                     </div>
                 </div>
@@ -424,33 +656,33 @@
                 <!-- Small tile 1 -->
                 <div class="relative rounded-3xl overflow-hidden group shadow-lg min-h-[200px] bg-background border border-border/50">
                     <img src="assets/a4.jpg"
-                         alt="Riding goggles" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                         alt="Motorcycle riding goggles and visors" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
                     <div class="absolute bottom-0 start-0 end-0 p-5 text-center">
-                        <h4 class="text-white font-serif text-lg">Goggles</h4>
+                        <h4 class="text-white font-serif text-lg">Goggles & Visors</h4>
                     </div>
                 </div>
 
                 <!-- Small tile 2 -->
                 <div class="relative rounded-3xl overflow-hidden group shadow-lg min-h-[200px] bg-background border border-border/50">
                     <img src="assets/a5.jpg"
-                         alt="Riding backpack" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                         alt="Waterproof riding backpack and luggage" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
                     <div class="absolute bottom-0 start-0 end-0 p-5 text-center">
-                        <h4 class="text-white font-serif text-lg">Backpacks</h4>
+                        <h4 class="text-white font-serif text-lg">Luggage & Packs</h4>
                     </div>
                 </div>
 
                 <!-- Wide tile -->
                 <div class="sm:col-span-2 relative rounded-3xl overflow-hidden group shadow-lg min-h-[200px]">
                     <img src="assets/a6.jpg"
-                         alt="Riding accessories" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-transparent"></div>
+                         alt="Riding care and electronics accessories" class="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-transparent"></div>
                     <div class="absolute inset-0 flex items-center justify-center sm:justify-start p-7">
                         <div class="text-center sm:text-start">
-                            <h4 class="text-white font-serif text-xl sm:text-2xl mb-2">Riding Accessories</h4>
+                            <h4 class="text-white font-serif text-xl sm:text-2xl mb-2">Smart Tech & Gear Care</h4>
                             <a href="accessories.html" class="inline-flex items-center gap-2 text-accent font-bold text-sm hover:gap-3 transition-all duration-300">
-                                Browse All <i class="fas fa-arrow-right text-xs"></i>
+                                Browse All Accessories <i class="fas fa-arrow-right text-xs"></i>
                             </a>
                         </div>
                     </div>
@@ -461,15 +693,17 @@
     </section>
 
 
-   
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 6 — CERTIFIED SAFETY STANDARDS (4 Cards)
+    ═══════════════════════════════════════════════════════════════ -->
     <section class="w-full py-20 sm:py-28 bg-background transition-colors duration-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-2xl">
 
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-block text-accent text-xs font-bold tracking-[0.3em] uppercase mb-4">Certified Excellence</span>
+                <span class="inline-block text-accent text-xs font-bold tracking-[0.3em] uppercase mb-4">Certified Protection</span>
                 <h2 class="text-primary-text font-serif leading-tight mb-5">Safety Without Compromise</h2>
                 <p class="text-secondary-text text-base sm:text-lg font-light max-w-2xl mx-auto">
-                    Every product meets rigorous international safety benchmarks — because your protection is non-negotiable.
+                    Every helmet, jacket, and boot we stock meets or exceeds international crash safety benchmarks.
                 </p>
             </div>
 
@@ -480,8 +714,8 @@
                     <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-accent/10 flex items-center justify-center text-accent text-2xl group-hover:bg-accent group-hover:text-white transition-all duration-400">
                         <i class="fas fa-certificate"></i>
                     </div>
-                    <h4 class="text-primary-text font-serif text-lg mb-3">ECE 22.06</h4>
-                    <p class="text-secondary-text text-sm leading-relaxed mt-auto">European helmet safety standard for impact absorption and retention.</p>
+                    <h4 class="text-primary-text font-serif text-lg mb-3">ECE 22.06 & DOT</h4>
+                    <p class="text-secondary-text text-sm leading-relaxed mt-auto">Latest rotational and multi-angle impact test certifications for all helmets.</p>
                 </div>
 
                 <!-- Standard 2 -->
@@ -489,8 +723,8 @@
                     <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-accent/10 flex items-center justify-center text-accent text-2xl group-hover:bg-accent group-hover:text-white transition-all duration-400">
                         <i class="fas fa-shield-halved"></i>
                     </div>
-                    <h4 class="text-primary-text font-serif text-lg mb-3">CE Level 2</h4>
-                    <p class="text-secondary-text text-sm leading-relaxed mt-auto">Highest armor rating for impact protection in jackets and pants.</p>
+                    <h4 class="text-primary-text font-serif text-lg mb-3">CE Level 2 Armor</h4>
+                    <p class="text-secondary-text text-sm leading-relaxed mt-auto">Highest-rated shoulder, elbow, and spine armor in our jackets and race suits.</p>
                 </div>
 
                 <!-- Standard 3 -->
@@ -498,17 +732,17 @@
                     <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-accent/10 flex items-center justify-center text-accent text-2xl group-hover:bg-accent group-hover:text-white transition-all duration-400">
                         <i class="fas fa-droplet"></i>
                     </div>
-                    <h4 class="text-primary-text font-serif text-lg mb-3">Waterproof Rated</h4>
-                    <p class="text-secondary-text text-sm leading-relaxed mt-auto">Tested against heavy rain and moisture for all-weather confidence.</p>
+                    <h4 class="text-primary-text font-serif text-lg mb-3">Waterproof Membranes</h4>
+                    <p class="text-secondary-text text-sm leading-relaxed mt-auto">Breathable Gore-Tex and Hydratex liners for complete wet-weather defense.</p>
                 </div>
 
                 <!-- Standard 4 -->
                 <div class="text-center p-8 rounded-3xl bg-hover border border-border/50 hover:border-accent/50 hover:shadow-xl transition-all duration-400 group h-full flex flex-col">
                     <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-accent/10 flex items-center justify-center text-accent text-2xl group-hover:bg-accent group-hover:text-white transition-all duration-400">
-                        <i class="fas fa-temperature-high"></i>
+                        <i class="fas fa-ruler-combined"></i>
                     </div>
-                    <h4 class="text-primary-text font-serif text-lg mb-3">Thermal Tested</h4>
-                    <p class="text-secondary-text text-sm leading-relaxed mt-auto">Verified insulation performance for both hot and cold climates.</p>
+                    <h4 class="text-primary-text font-serif text-lg mb-3">Precision Sizing</h4>
+                    <p class="text-secondary-text text-sm leading-relaxed mt-auto">Comprehensive head, chest, palm, and foot sizing charts for zero-guesswork fit.</p>
                 </div>
 
             </div>
@@ -516,42 +750,45 @@
     </section>
 
 
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 7 — SPOTLIGHT HERO GEAR (Split Showcase)
+    ═══════════════════════════════════════════════════════════════ -->
     <section class="relative w-full py-20 sm:py-28 bg-hover transition-colors duration-300 overflow-hidden">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-2xl">
 
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-block text-accent text-xs font-bold tracking-[0.3em] uppercase mb-4">Editor's Choice</span>
-                <h2 class="text-primary-text font-serif leading-tight mb-5">The Rider's Favorite</h2>
+                <span class="inline-block text-accent text-xs font-bold tracking-[0.3em] uppercase mb-4">Flagship Protection</span>
+                <h2 class="text-primary-text font-serif leading-tight mb-5">Engineered for the Road Ahead</h2>
                 <p class="text-secondary-text text-base sm:text-lg font-light max-w-2xl mx-auto">
-                    Our most-loved gear — trusted by thousands of riders across every terrain.
+                    A comprehensive head-to-toe protective system designed to give you complete freedom on two wheels.
                 </p>
             </div>
 
             <div class="relative rounded-[2rem] overflow-hidden shadow-2xl">
                 <img src="assets/a7.jpg"
-                     alt="Rider wearing full motorcycle gear" class="w-full h-[420px] sm:h-[540px] lg:h-[620px] object-cover object-top" loading="lazy" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/10"></div>
+                     alt="Rider wearing full motorcycle riding gear, helmet, jacket, gloves, and boots" class="w-full h-[420px] sm:h-[540px] lg:h-[620px] object-cover object-top" loading="lazy" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/20"></div>
 
                 <!-- Floating badge -->
                 <div class="absolute top-6 start-6 bg-accent text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase shadow-lg shadow-accent/40">
-                    <i class="fas fa-fire me-1"></i> Best Seller
+                    <i class="fas fa-shield me-1"></i> Full Riding Kit
                 </div>
 
                 <!-- Centered content overlay -->
                 <div class="absolute inset-0 flex items-center justify-center px-4">
                     <div class="text-center max-w-2xl">
                         <h3 class="text-white font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 drop-shadow-lg">
-                            Pro Riding Jacket
+                            Armor Up for Every Ride
                         </h3>
                         <p class="text-white/90 text-base sm:text-lg font-light leading-relaxed mb-8 max-w-xl mx-auto">
-                            CE Level 2 armor. Waterproof membrane. Thermal liner. Breathable ventilation. Everything you need — in one jacket.
+                            Helmets, jackets, carbon gloves, and armored boots engineered to work together as a synchronized protective suit.
                         </p>
                         <div class="flex flex-wrap items-center justify-center gap-4">
                             <a href="products.html" class="btn-primary px-9 py-3.5 rounded-full font-bold text-sm shadow-xl shadow-accent/40 transition-all duration-300">
-                                Shop Now
+                                Shop All Riding Gear
                             </a>
                             <a href="sizing-guide.html" class="px-9 py-3.5 rounded-full font-bold text-sm text-white border-2 border-white/70 hover:bg-white hover:text-accent transition-all duration-300 backdrop-blur-sm">
-                                Size Guide
+                                View Sizing Guide
                             </a>
                         </div>
                     </div>
@@ -561,14 +798,17 @@
     </section>
 
 
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 8 — NEWSLETTER / COMMUNITY CTA
+    ═══════════════════════════════════════════════════════════════ -->
     <section class="w-full py-20 sm:py-28 bg-background transition-colors duration-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-2xl">
 
             <div class="relative rounded-[2rem] overflow-hidden shadow-2xl">
 
                 <!-- Background image -->
-                <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=1600&auto=format&fit=crop&q=85"
-                     alt="Motorcycle on open road" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&auto=format&fit=crop&q=85"
+                     alt="Motorcycle rider wearing certified gear" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
 
                 <!-- Gradient overlay -->
                 <div class="absolute inset-0 bg-custom-gradient opacity-90"></div>
@@ -578,15 +818,15 @@
                 <div class="relative z-10 px-6 sm:px-12 lg:px-20 py-16 sm:py-20 lg:py-24 text-center max-w-4xl mx-auto">
 
                     <div class="w-16 h-16 mx-auto mb-7 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl border border-white/30">
-                        <i class="fas fa-envelope-open-text"></i>
+                        <i class="fas fa-helmet-safety"></i>
                     </div>
 
                     <h2 class="text-white font-serif leading-tight mb-5">
-                        Join the THROTTLE Community
+                        Join the THROTTLE Rider Community
                     </h2>
 
                     <p class="text-white/90 text-base sm:text-lg font-light leading-relaxed mb-10 max-w-2xl mx-auto">
-                        Get early access to new gear drops, exclusive discounts, and expert riding tips — straight to your inbox.
+                        Get early access to new helmet and jacket releases, exclusive gear discounts, and safety guides — straight to your inbox.
                     </p>
 
                     <!-- Newsletter form -->
@@ -599,7 +839,7 @@
                     </form>
 
                     <p class="text-white/70 text-xs mt-5">
-                        <i class="fas fa-lock me-1"></i> We respect your privacy. Unsubscribe anytime.
+                        <i class="fas fa-lock me-1"></i> We respect your privacy. No spam, ever.
                     </p>
                 </div>
             </div>
